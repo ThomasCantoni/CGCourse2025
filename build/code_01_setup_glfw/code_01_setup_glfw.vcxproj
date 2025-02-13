@@ -108,12 +108,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>../../3rdparty/glfw/include;../../3rdparty/glew/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\thirdparty\GLEW\include;..\..\thirdparty\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>../../3rdparty/glfw/lib-vc2022;../../3rdparty/glew\lib\Release\x64</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\thirdparty\GLFW\lib-vc2022;..\..\thirdparty\GLEW\lib\Release\x64\</AdditionalLibraryDirectories>
       <AdditionalDependencies>opengl32.lib;glfw3.lib; glew32s.lib; $(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -125,7 +125,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>../../3rdparty/glfw/include;../../3rdparty/glew/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\thirdparty\GLEW\include;..\..\thirdparty\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -133,7 +133,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>glfw3.lib; glew32s.lib; $(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>../../3rdparty/glfw/lib-vc2022;../../3rdparty/glew\lib\Release\x64</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\thirdparty\GLFW\lib-vc2022;..\..\thirdparty\GLEW\lib\Release\x64\</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

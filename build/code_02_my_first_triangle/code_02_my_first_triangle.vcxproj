@@ -104,13 +104,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>../../src; ../../3rdparty/glfw/include;../../3rdparty/glew/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\thirdparty\GLEW\include;..\..\thirdparty\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>opengl32.lib;glfw3.lib; glew32s.lib; $(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>../../3rdparty/glfw/lib-vc2022;../../3rdparty/glew\lib\Release\x64</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\thirdparty\GLFW\lib-vc2022;..\..\thirdparty\GLEW\lib\Release\x64\</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -121,13 +121,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>../../3rdparty/glfw/include;../../3rdparty/glew/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\thirdparty\GLEW\include;..\..\thirdparty\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\thirdparty\GLFW\lib-vc2022;..\..\thirdparty\GLEW\lib\Release\x64\</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
